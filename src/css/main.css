@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+/* Global default styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default Pages content styles */
+#page-content a {
+  @apply underline;
+}
+#page-content p,
+h2 {
+  @apply py-4;
+}
+#page-content :is(h1, h2, h3, h4, h5, h6) {
+  @apply underline;
+}
+#page-content pre {
+  @apply p-4 my-4 overflow-x-auto;
+}
+#page-content code {
+  @apply text-teal-400 px-px mx-1;
+}
+
+#page-content ul li {
+  list-style-position: inside;
+  list-style-type: "✒";
+}
+
+#page-content blockquote {
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 15px 15px 15px 1rem;
+  color: rgb(129, 145, 152);
+  border-left-width: 6px;
+  border-left-color: rgb(220, 230, 240);
+  font-size: 0.9em;
+  line-height: inherit;
+  background: rgb(242, 247, 251);
+  overflow: auto;
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: normal;
+  visibility: visible;
+}
+#page-content h1 {
+  box-sizing: border-box;
+  margin-top: 1.5em;
+  margin-right: 5px;
+  margin-bottom: 2em;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  line-height: inherit;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right bottom, rgb(0, 188, 212), rgb(63, 81, 181));
+  background-color: rgb(63, 81, 181);
+  border-left: 10px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  text-shadow: rgb(102, 102, 102) 1px 1px 1px;
+  box-shadow: rgb(102, 102, 102) 1px 1px 2px;
+  white-space: normal;
+  visibility: visible;
+}
+#page-content code {
+  box-sizing: border-box;
+  margin-right: 2px;
+  margin-left: 2px;
+  padding: 0.5em;
+  font-size: 14px;
+  color: rgb(169, 183, 198);
+  line-height: 18px;
+  border-radius: 0px;
+  background: rgb(40, 43, 46);
+  font-family: Consolas, Inconsolata, Courier, monospace;
+  display: block;
+  overflow-x: auto;
+  letter-spacing: 0px;
+  word-wrap: normal !important;
+  word-break: normal !important;
+  overflow-y: auto !important;
+}
+
+#page-content p {
+  box-sizing: border-box;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  color: rgb(62, 62, 62);
+  line-height: inherit;
+  white-space: normal;
+  background-color: rgb(255, 255, 255);
+  visibility: visible;
+}
